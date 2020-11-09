@@ -27,7 +27,8 @@ namespace DesignSistemVentas.View
             Icon_delay.Stop();
         }
 
-        private void btnIngresoUsuario_Click(object sender, EventArgs e)
+
+        private void btnOK_Click(object sender, EventArgs e)
         {
             Close();
         }

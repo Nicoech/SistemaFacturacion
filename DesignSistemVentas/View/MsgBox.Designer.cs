@@ -37,7 +37,7 @@
             this.lblMsg = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Icon_delay = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnOK = new JThinButton.JThinButton();
+            this.btnOK = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,25 +91,29 @@
             // 
             // btnOK
             // 
-            this.btnOK.BackColor = System.Drawing.Color.Transparent;
-            this.btnOK.BackgroundColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnOK.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnOK.BorderRadius = 5;
+            this.btnOK.ActiveBorderThickness = 1;
+            this.btnOK.ActiveCornerRadius = 20;
+            this.btnOK.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnOK.ActiveForecolor = System.Drawing.Color.White;
+            this.btnOK.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnOK.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnOK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOK.BackgroundImage")));
             this.btnOK.ButtonText = "OK";
-            this.btnOK.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.ForeColors = System.Drawing.Color.White;
-            this.btnOK.HoverBackground = System.Drawing.SystemColors.ActiveCaption;
-            this.btnOK.HoverBorder = System.Drawing.Color.Empty;
-            this.btnOK.HoverFontColor = System.Drawing.Color.MintCream;
-            this.btnOK.LineThickness = 2;
-            this.btnOK.Location = new System.Drawing.Point(54, 160);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnOK.IdleBorderThickness = 1;
+            this.btnOK.IdleCornerRadius = 20;
+            this.btnOK.IdleFillColor = System.Drawing.Color.White;
+            this.btnOK.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnOK.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnOK.Location = new System.Drawing.Point(70, 142);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnOK.Size = new System.Drawing.Size(225, 41);
-            this.btnOK.TabIndex = 13;
-            this.btnOK.Click += new System.EventHandler(this.btnIngresoUsuario_Click);
+            this.btnOK.Size = new System.Drawing.Size(204, 58);
+            this.btnOK.TabIndex = 14;
+            this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // MsgBox
             // 
@@ -141,7 +145,7 @@
         private new System.Windows.Forms.PictureBox Icon;
         private System.Windows.Forms.Timer Icon_delay;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
-        private JThinButton.JThinButton btnOK;
         public Bunifu.Framework.UI.BunifuCustomLabel lblMsg;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnOK;
     }
 }
