@@ -33,12 +33,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAltaUsuario = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.cbPassword = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.lbl = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -125,6 +125,16 @@
             this.panel1.Size = new System.Drawing.Size(250, 256);
             this.panel1.TabIndex = 127;
             // 
+            // txtNombreUsuario
+            // 
+            this.txtNombreUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNombreUsuario.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreUsuario.Location = new System.Drawing.Point(23, 41);
+            this.txtNombreUsuario.MaxLength = 30;
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(206, 30);
+            this.txtNombreUsuario.TabIndex = 100;
+            // 
             // cbPassword
             // 
             this.cbPassword.AutoSize = true;
@@ -179,16 +189,6 @@
             this.txtContraseña.Size = new System.Drawing.Size(206, 30);
             this.txtContraseña.TabIndex = 101;
             this.txtContraseña.UseSystemPasswordChar = true;
-            // 
-            // txtNombreUsuario
-            // 
-            this.txtNombreUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNombreUsuario.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreUsuario.Location = new System.Drawing.Point(23, 41);
-            this.txtNombreUsuario.MaxLength = 30;
-            this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(206, 30);
-            this.txtNombreUsuario.TabIndex = 100;
             // 
             // lbl
             // 
@@ -262,6 +262,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificarUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarUsuarios";
             this.Load += new System.EventHandler(this.ModificarUsuarios_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ModificarUsuarios_MouseDown);

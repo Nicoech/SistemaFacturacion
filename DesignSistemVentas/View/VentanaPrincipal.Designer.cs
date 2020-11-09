@@ -170,9 +170,9 @@
             this.btnCuentasCorrientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuentasCorrientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCuentasCorrientes.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentasCorrientes.Image")));
-            this.btnCuentasCorrientes.Location = new System.Drawing.Point(650, 17);
+            this.btnCuentasCorrientes.Location = new System.Drawing.Point(650, 16);
             this.btnCuentasCorrientes.Name = "btnCuentasCorrientes";
-            this.btnCuentasCorrientes.Size = new System.Drawing.Size(156, 162);
+            this.btnCuentasCorrientes.Size = new System.Drawing.Size(156, 163);
             this.btnCuentasCorrientes.TabIndex = 65;
             this.btnCuentasCorrientes.Text = "CTAS.CTES";
             this.btnCuentasCorrientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
