@@ -52,6 +52,7 @@ namespace DesignSistemVentas.View.UsuariosView
         private void ModificarUsuarios_Load(object sender, EventArgs e)
         {
             WinAPI.AnimateWindow(this.Handle, 200, WinAPI.CENTER);
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

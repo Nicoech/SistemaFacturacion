@@ -56,7 +56,7 @@ namespace DesignSistemVentas.View.FacturasViews
 
         public void VistaFacturas_Load(object sender, EventArgs e)
         {
-            WinAPI.AnimateWindow(this.Handle, 500, WinAPI.CENTER);
+            WinAPI.AnimateWindow(this.Handle, 50, WinAPI.CENTER);
 
             bordesRedondeadosForm();
 
