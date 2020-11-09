@@ -144,6 +144,7 @@
             this.btnIngresar.TabIndex = 3;
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            this.btnIngresar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnIngresar_KeyDown);
             // 
             // bunifuImageButton1
             // 

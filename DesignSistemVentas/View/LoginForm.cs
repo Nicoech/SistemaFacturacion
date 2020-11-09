@@ -133,6 +133,14 @@ namespace DesignSistemVentas
         {
             _UserController.Login(txtUsuario, txtContraseña);
         }
+
+        private void btnIngresar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                _UserController.Login(txtUsuario, txtContraseña);
+            }
+        }
     }
 }
 
