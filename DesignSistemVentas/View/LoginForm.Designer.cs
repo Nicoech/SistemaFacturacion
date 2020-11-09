@@ -33,9 +33,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnIngresoUsuario = new JThinButton.JThinButton();
             this.hogarElectricoIcon = new System.Windows.Forms.PictureBox();
             this.panelBox = new System.Windows.Forms.Panel();
+            this.btnIngresar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -89,31 +89,6 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
-            // btnIngresoUsuario
-            // 
-            this.btnIngresoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIngresoUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresoUsuario.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnIngresoUsuario.BorderColor = System.Drawing.Color.ForestGreen;
-            this.btnIngresoUsuario.BorderRadius = 5;
-            this.btnIngresoUsuario.ButtonText = "INGRESAR";
-            this.btnIngresoUsuario.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnIngresoUsuario.Font_Size = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnIngresoUsuario.ForeColors = System.Drawing.Color.White;
-            this.btnIngresoUsuario.HoverBackground = System.Drawing.Color.White;
-            this.btnIngresoUsuario.HoverBorder = System.Drawing.Color.Empty;
-            this.btnIngresoUsuario.HoverFontColor = System.Drawing.Color.DarkRed;
-            this.btnIngresoUsuario.LineThickness = 2;
-            this.btnIngresoUsuario.Location = new System.Drawing.Point(26, 265);
-            this.btnIngresoUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.btnIngresoUsuario.Name = "btnIngresoUsuario";
-            this.btnIngresoUsuario.Size = new System.Drawing.Size(280, 73);
-            this.btnIngresoUsuario.TabIndex = 12;
-            this.btnIngresoUsuario.Click += new System.EventHandler(this.btnIngresoUsuario_Click);
-            this.btnIngresoUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnIngresoUsuario_KeyDown);
-            // 
             // hogarElectricoIcon
             // 
             this.hogarElectricoIcon.BackColor = System.Drawing.Color.Black;
@@ -132,17 +107,43 @@
             // panelBox
             // 
             this.panelBox.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panelBox.Controls.Add(this.btnIngresar);
             this.panelBox.Controls.Add(this.bunifuImageButton1);
             this.panelBox.Controls.Add(this.bunifuImageButton2);
             this.panelBox.Controls.Add(this.txtUsuario);
             this.panelBox.Controls.Add(this.txtContraseña);
-            this.panelBox.Controls.Add(this.btnIngresoUsuario);
             this.panelBox.Controls.Add(this.pictureBox3);
             this.panelBox.Controls.Add(this.pictureBox2);
             this.panelBox.Location = new System.Drawing.Point(321, 12);
             this.panelBox.Name = "panelBox";
             this.panelBox.Size = new System.Drawing.Size(337, 381);
             this.panelBox.TabIndex = 17;
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.ActiveBorderThickness = 1;
+            this.btnIngresar.ActiveCornerRadius = 20;
+            this.btnIngresar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnIngresar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnIngresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresar.BackgroundImage")));
+            this.btnIngresar.ButtonText = "INGRESAR";
+            this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.IdleBorderThickness = 1;
+            this.btnIngresar.IdleCornerRadius = 20;
+            this.btnIngresar.IdleFillColor = System.Drawing.Color.White;
+            this.btnIngresar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.Location = new System.Drawing.Point(26, 260);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(280, 93);
+            this.btnIngresar.TabIndex = 3;
+            this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // bunifuImageButton1
             // 
@@ -236,7 +237,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private JThinButton.JThinButton btnIngresoUsuario;
         private System.Windows.Forms.Panel panelBox;
         private System.Windows.Forms.PictureBox hogarElectricoIcon;
         private System.Windows.Forms.Timer timer1;
@@ -245,5 +245,6 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnIngresar;
     }
 }

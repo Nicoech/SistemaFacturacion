@@ -128,6 +128,11 @@ namespace DesignSistemVentas
                 Application.Exit();
             }
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            _UserController.Login(txtUsuario, txtContraseña);
+        }
     }
 }
 
