@@ -52,7 +52,7 @@ namespace DesignSistemVentas.Controller.FacturasController
         {
             _vrf = vrf;
         }
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void cerrarVentana()
         {
             if (MessageBox.Show("¿DESEA CERRAR ESTA VENTANA?", "CERRAR ESTA VENTANA?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
@@ -61,7 +61,7 @@ namespace DesignSistemVentas.Controller.FacturasController
             }
         }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void generoFactura(int NroFac, string nt, string iv, string ivaImp)
         {
 
@@ -130,8 +130,8 @@ namespace DesignSistemVentas.Controller.FacturasController
                 MessageBox.Show(ex.ToString());
             }
         }
-     
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void generoRemito(int NroRemito)
         {
 
@@ -157,8 +157,8 @@ namespace DesignSistemVentas.Controller.FacturasController
             RRF.ShowDialog();
 
         }
-//--------------------------------------------------------------------------------------------------------------------------------------------------
-public bool insertEncabezadoFactura()
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
+        public bool insertEncabezadoFactura()
         {
             bool inserte = false;
             var producto = new Facturacion();
@@ -195,7 +195,7 @@ public bool insertEncabezadoFactura()
                     }
                     else
                     {
-                         insertoFacturaCCIngresoCaja();
+                        insertoFacturaCCIngresoCaja();
                         _fac_dao.insertoFacturaDaoCC(producto);
                     }
 
@@ -327,7 +327,7 @@ public bool insertEncabezadoFactura()
 
             caja.Tipo = "INGRESO";
 
-            caja.Descripcion = _vf.txtDNICliente.Text +" "+ _vf.txtNombreCliente.Text;
+            caja.Descripcion = _vf.txtDNICliente.Text + " " + _vf.txtNombreCliente.Text;
 
             caja.Detalle = "FACTURA N° " + _vf.txtNroFactura.Text + " FP: " + _vf.cmbFormaDePago.Text;
 
@@ -344,23 +344,23 @@ public bool insertEncabezadoFactura()
         public void insertoFacturaCCIngresoCaja()
         {
 
-                Caja caja = new Caja();
+            Caja caja = new Caja();
 
 
-                caja.Nro_Planilla = _cajaDao.obtengoNroPlanilla();
+            caja.Nro_Planilla = _cajaDao.obtengoNroPlanilla();
 
-                caja.Tipo = "INGRESO";
+            caja.Tipo = "INGRESO";
 
-                caja.Descripcion = _vf.txtDNICliente.Text + " " + _vf.txtNombreCliente.Text;
+            caja.Descripcion = _vf.txtDNICliente.Text + " " + _vf.txtNombreCliente.Text;
 
-                caja.Detalle = "CUOTA N° " + _vf.dgvFacturaCuotas.CurrentRow.Cells[1].Value.ToString() + " FACTURA N° " + _vf.txtNroFactura.Text;
+            caja.Detalle = "CUOTA N° " + _vf.dgvFacturaCuotas.CurrentRow.Cells[1].Value.ToString() + " FACTURA N° " + _vf.txtNroFactura.Text;
 
-                caja.Valor = Convert.ToDecimal(_vf.dgvFacturaCuotas.CurrentRow.Cells[2].Value);
+            caja.Valor = Convert.ToDecimal(_vf.dgvFacturaCuotas.CurrentRow.Cells[2].Value);
 
-                caja.Fecha = _vf.dtpFacturaFecha.Text;
+            caja.Fecha = _vf.dtpFacturaFecha.Text;
 
-                _cajaDao.InsertMovimientoCaja(caja);
-  
+            _cajaDao.InsertMovimientoCaja(caja);
+
         }
         //--------------------------------------------------------------------------------------------------------------------------------------------------
         public int InsertoEncabezadoRemito()
@@ -656,13 +656,14 @@ public bool insertEncabezadoFactura()
 
         public void agregoDatosTarjeta(VistaFacturas _vf)
         {
-            if (_vf.txtNombreC.Text != "" && _vf.txtBanco.Text != "" && _vf.txtEmpresaTarjeta.Text != "") {
+            if (_vf.txtNombreC.Text != "" && _vf.txtBanco.Text != "" && _vf.txtEmpresaTarjeta.Text != "")
+            {
 
                 if (_vf.txtImporte4.Text == "" && _vf.txtImporte5.Text == "" && _vf.txtImporte6.Text == "")
                 {
                     _vf.txtObservaciones.Text = (" El Cliente abono el/los productos con tarjeta de credito, en 3 cuotas con un recargo del 2.5%." +
                             " Cada cuota tiene un valor de $ " + _vf.txtImporte1.Text) +
-                            "\n" + "\n" + " Titular Tarjeta: "+_vf.txtNombreC.Text.ToUpper() + "\n" + " Empresa tarjeta: " + _vf.txtEmpresaTarjeta.Text.ToUpper() + "\n" + " Banco: " + _vf.txtBanco.Text.ToUpper();
+                            "\n" + "\n" + " Titular Tarjeta: " + _vf.txtNombreC.Text.ToUpper() + "\n" + " Empresa tarjeta: " + _vf.txtEmpresaTarjeta.Text.ToUpper() + "\n" + " Banco: " + _vf.txtBanco.Text.ToUpper();
                 }
                 else
                 {
@@ -741,7 +742,7 @@ public bool insertEncabezadoFactura()
 
                     AltaClientes ac = new AltaClientes();
 
-                    ac.btnAltaClienteFactura.Visible= true;
+                    ac.btnAltaClienteFactura.Visible = true;
                     ac.btnAltaCliente.Visible = false;
                     ac.btnSalirACFac.Visible = true;
                     ac.btnVolver.Visible = false;
@@ -1139,87 +1140,87 @@ public bool insertEncabezadoFactura()
 
 
 
-                //-----------------------OPCIONES EN CASO DE SELECCIONAR CLIENTE REGISTRADO-----------------------//
+            //-----------------------OPCIONES EN CASO DE SELECCIONAR CLIENTE REGISTRADO-----------------------//
 
-                if (_vf.cmbBoxTipoCliente.SelectedIndex == 0)
+            if (_vf.cmbBoxTipoCliente.SelectedIndex == 0)
+            {
+
+                if (_vf.txtSitIVA.Text == "RESPONSABLE INSCRIPTO")
                 {
-
-                    if (_vf.txtSitIVA.Text == "RESPONSABLE INSCRIPTO")
-                    {
-                        if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtCuit.Text != "") &  (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
-                        {
-                            _vf.btnAgregarProducto.Enabled = true;
-                            CPF.ShowDialog();
-                        }
-                        else
-                        {
-                            MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                        }
-                    }
-                    if (_vf.txtSitIVA.Text == "CONSUMIDOR FINAL")
-                    {
-                        if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
-                        {
-                            if (_vf.txtDNICliente.TextLength == 8)
-                            {
-                                _vf.btnAgregarProducto.Enabled = true;
-                                CPF.ShowDialog();
-                            }
-                            else
-                            {
-                                MessageBox.Show("EL DNI DEBE CONTENER 8 DIGITOS!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                        }
-                    }
-
-                }
-                else
-                {
-
-                    if (_vf.txtSitIVA.Text == "RESPONSABLE INSCRIPTO")
+                    if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtCuit.Text != "") & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
                     {
                         _vf.btnAgregarProducto.Enabled = true;
+                        CPF.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                        if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtCuit.Text != "")  & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
+                    }
+                }
+                if (_vf.txtSitIVA.Text == "CONSUMIDOR FINAL")
+                {
+                    if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
+                    {
+                        if (_vf.txtDNICliente.TextLength == 8)
                         {
                             _vf.btnAgregarProducto.Enabled = true;
                             CPF.ShowDialog();
                         }
                         else
                         {
-                            MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                            MessageBox.Show("EL DNI DEBE CONTENER 8 DIGITOS!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-                    if (_vf.txtSitIVA.Text == "CONSUMIDOR FINAL")
+                    else
                     {
-                        if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
+                        MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+
+            }
+            else
+            {
+
+                if (_vf.txtSitIVA.Text == "RESPONSABLE INSCRIPTO")
+                {
+                    _vf.btnAgregarProducto.Enabled = true;
+
+                    if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtCuit.Text != "") & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
+                    {
+                        _vf.btnAgregarProducto.Enabled = true;
+                        CPF.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+                if (_vf.txtSitIVA.Text == "CONSUMIDOR FINAL")
+                {
+                    if ((_vf.txtNombreCliente.Text != "") & (_vf.txtDNICliente.Text != "") & (_vf.cmbBoxLetraF.DataSource != null) & (_vf.txtDomicilio.Text != "") & (_vf.txtNroDomicilio.Text != ""))
+                    {
+                        if (_vf.txtDNICliente.TextLength == 8)
                         {
-                            if (_vf.txtDNICliente.TextLength == 8)
-                            {
-                                _vf.btnAgregarProducto.Enabled = true;
-                                CPF.ShowDialog();
-                            }
-                            else
-                            {
-                                MessageBox.Show("EL DNI DEBE CONTENER 8 DIGITOS!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
+                            _vf.btnAgregarProducto.Enabled = true;
+                            CPF.ShowDialog();
                         }
                         else
                         {
-                            MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                            MessageBox.Show("EL DNI DEBE CONTENER 8 DIGITOS!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("DEBE COMPLETAR TODOS LOS DATOS SOLICITADOS DEL CLIENTE!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
                 }
+            }
         }
-//------------------------------------------------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------------------------------------------
         public string obtengoCuitString(string a)
         {
 

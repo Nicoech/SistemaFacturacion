@@ -4,11 +4,6 @@ using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.CajaView;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.CajaController
@@ -30,7 +25,7 @@ namespace DesignSistemVentas.Controller.CajaController
         {
             _acm = acm;
         }
-        
+
 
         public void traigoClientesCaja(agregarClienteMovimientoModif _acm)
         {
@@ -48,48 +43,48 @@ namespace DesignSistemVentas.Controller.CajaController
         {
             cajaModificar cm = new cajaModificar(_cv);
 
-            cm.txtIDPlanilla.Text = _cv.dgvCtaCte.CurrentRow.Cells[0].Value.ToString();
-            cm.cmbTipoMovimiento.Text = _cv.dgvCtaCte.CurrentRow.Cells[1].Value.ToString();
-            cm.txtDescripcion.Text = _cv.dgvCtaCte.CurrentRow.Cells[2].Value.ToString();
-            cm.txtDetalle.Text = _cv.dgvCtaCte.CurrentRow.Cells[3].Value.ToString();
-            cm.txtMonto.Text = _cv.dgvCtaCte.CurrentRow.Cells[4].Value.ToString();
+            cm.txtIDPlanilla.Text = _cv.dgvCaja.CurrentRow.Cells[0].Value.ToString();
+            cm.cmbTipoMovimiento.Text = _cv.dgvCaja.CurrentRow.Cells[1].Value.ToString();
+            cm.txtDescripcion.Text = _cv.dgvCaja.CurrentRow.Cells[2].Value.ToString();
+            cm.txtDetalle.Text = _cv.dgvCaja.CurrentRow.Cells[3].Value.ToString();
+            cm.txtMonto.Text = _cv.dgvCaja.CurrentRow.Cells[4].Value.ToString();
             cm.ShowDialog();
 
 
         }
         public void searchMovimientosCaja(cajaView _cv)
         {
-            _cDao.searchCaja(_cv.dgvCtaCte);
+            _cDao.searchCaja(_cv.dgvCaja);
         }
         public void updateMovimientoCaja(cajaView _cv)
         {
 
-                _cajaModel.Nro_Planilla = Convert.ToInt32(_cm.txtIDPlanilla.Text);
+            _cajaModel.Nro_Planilla = Convert.ToInt32(_cm.txtIDPlanilla.Text);
 
-                _cajaModel.Tipo = _cm.cmbTipoMovimiento.Text;
+            _cajaModel.Tipo = _cm.cmbTipoMovimiento.Text;
 
-                _cajaModel.Descripcion = _cm.txtDescripcion.Text;
+            _cajaModel.Descripcion = _cm.txtDescripcion.Text;
 
-                _cajaModel.Detalle = _cm.txtDetalle.Text;
+            _cajaModel.Detalle = _cm.txtDetalle.Text;
 
-                _cajaModel.Valor = Convert.ToDecimal(_cm.txtMonto.Text);
+            _cajaModel.Valor = Convert.ToDecimal(_cm.txtMonto.Text);
 
-                _cajaModel.Fecha = _cm.dtpFechaMovimiento.Text;
+            _cajaModel.Fecha = _cm.dtpFechaMovimiento.Text;
 
 
-                if (_cDao.UpdateMovimientoCaja(_cajaModel))
-                {
-                        MsgBox msg = new MsgBox();
+            if (_cDao.UpdateMovimientoCaja(_cajaModel))
+            {
+                MsgBox msg = new MsgBox();
 
-                        msg.lblMsg.Text = "MOVIMIENTO MODIFICADO CON EXITO!";
+                msg.lblMsg.Text = "MOVIMIENTO MODIFICADO CON EXITO!";
 
-                        msg.ShowDialog();
+                msg.ShowDialog();
 
-                       Form.ActiveForm.Close();
+                Form.ActiveForm.Close();
 
-                        searchMovimientosCaja(_cv);
-                }
-            
+                searchMovimientosCaja(_cv);
+            }
+
         }
 
         public void NumerosConComa(object sender, KeyPressEventArgs e)

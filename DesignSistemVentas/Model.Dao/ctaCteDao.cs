@@ -32,9 +32,11 @@ namespace DesignSistemVentas.Model.Dao
                 da.Fill(dt);
 
                 Grid.DataSource = dt;
-                if (dt.Rows.Count > 0) {
+                if (dt.Rows.Count > 0)
+                {
                     return true;
-                } else
+                }
+                else
                 {
                     return false;
                 }

@@ -2,11 +2,6 @@
 using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.View.HistoricoClientesFacturas;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.HistoricoController
@@ -34,7 +29,7 @@ namespace DesignSistemVentas.Controller.HistoricoController
         }
         public void traigoFacturasHistoricoByFechas(DataGridView dgv)
         {
-            dgv.DataSource = hDao.searchFacturasByFechas(_hcv.txtDNICliente.Text,_hcv.dtpInicial,_hcv.dtpFinal);
+            dgv.DataSource = hDao.searchFacturasByFechas(_hcv.txtDNICliente.Text, _hcv.dtpInicial, _hcv.dtpFinal);
         }
 
         public void ExportarAExcel(DataGridView dgv)

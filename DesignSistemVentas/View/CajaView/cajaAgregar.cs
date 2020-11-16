@@ -1,14 +1,8 @@
 ﻿using DesignSistemVentas.Controller.CajaController;
 using DesignSistemVentas.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.View.CajaView
@@ -27,7 +21,7 @@ namespace DesignSistemVentas.View.CajaView
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-            private static extern IntPtr CreateRoundRectRgn
+        private static extern IntPtr CreateRoundRectRgn
              (
                 int nLeftRect,     // x-coordinate of upper-left corner
                 int nTopRect,      // y-coordinate of upper-left corner
@@ -57,7 +51,7 @@ namespace DesignSistemVentas.View.CajaView
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.VER_POSITIVE);
             _camc.generoNroPlanilla();
             _camc.accionesCajaAltaMovimientosLoad();
-        }   
+        }
 
         private void botonSalir_Click(object sender, EventArgs e)
         {
@@ -83,7 +77,7 @@ namespace DesignSistemVentas.View.CajaView
 
         private void txtMonto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            _camc.NumerosConComa(txtMonto,e);
+            _camc.NumerosConComa(txtMonto, e);
         }
 
         private void btnAltaMovimientoCaja_Click(object sender, EventArgs e)

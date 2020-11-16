@@ -243,7 +243,7 @@
             this.dtpInicial.Name = "dtpInicial";
             this.dtpInicial.Size = new System.Drawing.Size(282, 24);
             this.dtpInicial.TabIndex = 159;
-            this.dtpInicial.Value = new System.DateTime(2020, 10, 8, 0, 0, 0, 0);
+            this.dtpInicial.Value = new System.DateTime(2020, 11, 10, 0, 0, 0, 0);
             this.dtpInicial.ValueChanged += new System.EventHandler(this.dtpInicial_ValueChanged);
             // 
             // panel1
@@ -316,6 +316,7 @@
             // 
             // bunifuFlatButton1
             // 
+            this.bunifuFlatButton1.Active = false;
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -351,6 +352,7 @@
             // 
             // btnExportarExcel
             // 
+            this.btnExportarExcel.Active = false;
             this.btnExportarExcel.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnExportarExcel.BackColor = System.Drawing.Color.DarkGreen;
             this.btnExportarExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

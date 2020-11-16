@@ -2,9 +2,6 @@
 using DesignSistemVentas.Properties;
 using DesignSistemVentas.View.FacturasViews;
 using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
 
 namespace DesignSistemVentas.Controller.FacturasController
 {

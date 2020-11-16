@@ -3,7 +3,6 @@ using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.ClientesController
@@ -157,7 +156,7 @@ namespace DesignSistemVentas.Controller.ClientesController
             }
         }
 
- 
+
         public void bindDataCliente()
         {
             ModificacionClientes mc = new ModificacionClientes(_vc);

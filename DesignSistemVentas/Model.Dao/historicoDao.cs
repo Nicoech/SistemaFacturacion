@@ -1,11 +1,7 @@
 ﻿using DesignSistemVentas.ModelDao;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Model.Dao
@@ -64,12 +60,13 @@ namespace DesignSistemVentas.Model.Dao
                 if (dt.Rows.Count > 0)
                 {
                     return dt;
-                } else
+                }
+                else
                 {
                     MessageBox.Show("No se encontraron facturas de este cliente!");
                     return dt;
                 }
-                
+
 
 
             }
@@ -89,7 +86,7 @@ namespace DesignSistemVentas.Model.Dao
 
         }
 
-        public DataTable searchFacturasByFechas(string buscoFacturas,DateTimePicker dtp, DateTimePicker dtp2)
+        public DataTable searchFacturasByFechas(string buscoFacturas, DateTimePicker dtp, DateTimePicker dtp2)
         {
             try
             {

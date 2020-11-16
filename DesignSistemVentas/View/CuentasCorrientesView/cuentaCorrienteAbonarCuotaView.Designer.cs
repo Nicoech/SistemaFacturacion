@@ -232,7 +232,7 @@
             // 
             this.txtFechaInicial.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtFechaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaInicial.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtFechaInicial.ForeColor = System.Drawing.SystemColors.InfoText;
             this.txtFechaInicial.Location = new System.Drawing.Point(198, 22);
             this.txtFechaInicial.Margin = new System.Windows.Forms.Padding(4);
             this.txtFechaInicial.Name = "txtFechaInicial";
@@ -245,7 +245,7 @@
             // 
             this.txtFechaVto.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtFechaVto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaVto.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtFechaVto.ForeColor = System.Drawing.SystemColors.InfoText;
             this.txtFechaVto.Location = new System.Drawing.Point(198, 66);
             this.txtFechaVto.Margin = new System.Windows.Forms.Padding(4);
             this.txtFechaVto.Name = "txtFechaVto";

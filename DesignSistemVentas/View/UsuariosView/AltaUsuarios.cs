@@ -49,12 +49,12 @@ namespace DesignSistemVentas.View.UsuariosView
 
         private void botonSalir_Click(object sender, EventArgs e)
         {
-            
-                if (System.Windows.Forms.MessageBox.Show("¿DESEA SALIR?", "SALIR A MENU A PRINCIPAL", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
-                {
-                    ActiveForm.Close();
-                }
-            
+
+            if (System.Windows.Forms.MessageBox.Show("¿DESEA SALIR?", "SALIR A MENU A PRINCIPAL", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+            {
+                ActiveForm.Close();
+            }
+
         }
 
         private void botonMinimizar_Click(object sender, EventArgs e)

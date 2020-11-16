@@ -3,10 +3,6 @@ using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.CajaView;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.CajaController
@@ -23,11 +19,11 @@ namespace DesignSistemVentas.Controller.CajaController
         public void DeleteMovimientoCaja(cajaView _cv)
         {
 
-            if (_cv.dgvCtaCte.SelectedCells.Count > 0)
+            if (_cv.dgvCaja.SelectedCells.Count > 0)
             {
 
-                int selectedRowIndex = _cv.dgvCtaCte.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = _cv.dgvCtaCte.Rows[selectedRowIndex];
+                int selectedRowIndex = _cv.dgvCaja.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = _cv.dgvCaja.Rows[selectedRowIndex];
 
                 _cajaModel.Nro_Planilla = Convert.ToInt32(selectedRow.Cells["Nro_Planilla"].Value);
 
@@ -38,11 +34,11 @@ namespace DesignSistemVentas.Controller.CajaController
 
                     MsgBox msg = new MsgBox();
 
-                    msg.lblMsg.Text = "MOVIMIENTO DE CAJA" + "\n"+ "ELIMINADO CON EXITO!";
+                    msg.lblMsg.Text = "MOVIMIENTO DE CAJA" + "\n" + "ELIMINADO CON EXITO!";
 
                     msg.ShowDialog();
 
-                    _cDao.searchCaja(_cv.dgvCtaCte);
+                    _cDao.searchCaja(_cv.dgvCaja);
                 }
             }
 

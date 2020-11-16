@@ -4,10 +4,6 @@ using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.UsuariosView;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.UserController

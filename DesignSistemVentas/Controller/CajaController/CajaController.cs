@@ -1,14 +1,8 @@
-﻿using CrystalDecisions.Windows.Forms;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CrystalDecisions.CrystalReports.Engine;
+﻿using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.View.CajaView;
+using System;
+using System.Data;
 using System.Windows.Forms;
-using DesignSistemVentas.Model.Dao;
 
 namespace DesignSistemVentas.Controller.CajaController
 {
@@ -17,7 +11,8 @@ namespace DesignSistemVentas.Controller.CajaController
         private DataSet ds = new DataSet();
         private CajaDao _cDao = new CajaDao();
         private cajaView _cv;
-
+        decimal suma;
+        decimal total;
         public CajaController(cajaView cv)
         {
             _cv = cv;
@@ -45,5 +40,16 @@ namespace DesignSistemVentas.Controller.CajaController
             dgv.DataSource = _cDao.searchMovimientosbyFecha(_cv.dtpInicial, _cv.dtpLimite);
         }
 
+        public void generoTotalCaja(DataGridView dgv)
+        {
+            total = 0;
+            foreach (DataGridViewRow filaProd in dgv.Rows)
+            {
+                suma = Convert.ToDecimal(filaProd.Cells[4].Value);
+                total += suma;
+
+                _cv.txtTotalCaja.Text = total.ToString();
+            }
+        }
     }
 }

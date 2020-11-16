@@ -1,14 +1,8 @@
 ﻿using DesignSistemVentas.Controller.CajaController;
 using DesignSistemVentas.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.View.CajaView
@@ -22,7 +16,7 @@ namespace DesignSistemVentas.View.CajaView
         private agregarClienteMovimientoModif _acm;
         private CajaController _cc;
         private Constants c = new Constants();
-        
+
 
 
         // CODIGO PARA MOVER FORM SIN BORDES 
@@ -49,7 +43,7 @@ namespace DesignSistemVentas.View.CajaView
         {
             InitializeComponent();
             _camc = new cajaAltaMovimientoController(this);
-            
+
             _cmmc = new cajaModificacionMovimientosController(_acm);
             _cdmc = new cajaDeleteMovimientoController(this);
             _cc = new CajaController(this);
@@ -127,17 +121,22 @@ namespace DesignSistemVentas.View.CajaView
 
         private void dtpInicial_ValueChanged(object sender, EventArgs e)
         {
-            _cc.traigoMovimientosbyFechas(dgvCtaCte);
+            _cc.traigoMovimientosbyFechas(dgvCaja);
         }
 
         private void cmbTipo_SelectedValueChanged(object sender, EventArgs e)
         {
-            _cc.traigoMovimientosbyFiltro(dgvCtaCte);
+            _cc.traigoMovimientosbyFiltro(dgvCaja);
         }
 
         private void cmbTipo_MouseClick(object sender, MouseEventArgs e)
         {
             cmbTipo.DataSource = c.TipoMovimientoCaja();
+        }
+
+        private void dgvCaja_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            _cc.generoTotalCaja(dgvCaja);
         }
     }
 }

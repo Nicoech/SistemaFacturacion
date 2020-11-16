@@ -56,10 +56,10 @@ namespace DesignSistemVentas.Model.Dao
             }
         }
 
-        
 
-//--------------------------------------------------------------------------------------------------
-            public DataTable SP_searchFacturasByIDClienteReimprimir(string buscoFacturas)
+
+        //--------------------------------------------------------------------------------------------------
+        public DataTable SP_searchFacturasByIDClienteReimprimir(string buscoFacturas)
         {
             try
             {
@@ -73,10 +73,11 @@ namespace DesignSistemVentas.Model.Dao
                 SqlDataAdapter da = new SqlDataAdapter(comand);
                 da.Fill(dt);
 
-                if(dt.Rows.Count > 0)
+                if (dt.Rows.Count > 0)
                 {
                     return dt;
-                } else
+                }
+                else
                 {
                     MessageBox.Show("El Cliente no posee facturas ni remitos dentro del sistema.", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return dt;
@@ -98,7 +99,7 @@ namespace DesignSistemVentas.Model.Dao
             }
 
         }
-//--------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------
         public DataTable SP_searchRemitosByIDCliente(string buscoRemitos)
         {
             try
@@ -462,8 +463,8 @@ namespace DesignSistemVentas.Model.Dao
             return inserteFactura;
         }
         //----------------------------------------------------------------------------------------------------------------
-       
-       
+
+
         public bool InsertEncabezadoRemito(RemitoModel R)
         {
             SqlCommand _comand = null;
@@ -504,7 +505,7 @@ namespace DesignSistemVentas.Model.Dao
             return inserteFactura;
         }
         //----------------------------------------------------------------------------------------------------------------
-        public void guardoTotalFactura(int nroFac, decimal total,string iva,decimal neto,decimal netoiva, string obs)
+        public void guardoTotalFactura(int nroFac, decimal total, string iva, decimal neto, decimal netoiva, string obs)
         {
             SqlCommand _comand = null;
             try

@@ -28,7 +28,7 @@ namespace DesignSistemVentas.View.ProductosViews
             _mp_ctr = new ModificacionProductosController(this);
         }
 
-///----------------------------------------------------------------------------------------------------------------------------------------------------
+        ///----------------------------------------------------------------------------------------------------------------------------------------------------
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -39,7 +39,7 @@ namespace DesignSistemVentas.View.ProductosViews
           int nWidthEllipse, // height of ellipse
           int nHeightEllipse // width of ellipse
         );
-///----------------------------------------------------------------------------------------------------------------------------------------------------
+        ///----------------------------------------------------------------------------------------------------------------------------------------------------
         private void botonSalir_Click(object sender, EventArgs e)
         {
             if (System.Windows.Forms.MessageBox.Show("¿DESEA SALIR?", "SALIR A MENU A PRINCIPAL", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)

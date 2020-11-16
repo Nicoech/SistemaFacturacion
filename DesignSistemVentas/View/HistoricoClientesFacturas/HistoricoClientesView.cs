@@ -1,15 +1,8 @@
 ﻿using DesignSistemVentas.Controller.HistoricoController;
 using DesignSistemVentas.Utilities;
-using EO.Internal;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.View.HistoricoClientesFacturas
@@ -23,8 +16,8 @@ namespace DesignSistemVentas.View.HistoricoClientesFacturas
             InitializeComponent();
             _hc = new historicoController(this);
         }
-    
-         //------------------------------------------------------------------------------------------------------------------------------
+
+        //------------------------------------------------------------------------------------------------------------------------------
 
         // CODIGO PARA MOVER FORM SIN BORDES 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -50,7 +43,7 @@ namespace DesignSistemVentas.View.HistoricoClientesFacturas
         //------------------------------------------------------------------------------------------------------------------------------
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            if(dgvHistorico.Rows.Count > 0)
+            if (dgvHistorico.Rows.Count > 0)
             {
                 dgvHistorico.DataSource = null;
             }
@@ -82,10 +75,11 @@ namespace DesignSistemVentas.View.HistoricoClientesFacturas
 
         private void btnListarHistoricoCliente_Click(object sender, EventArgs e)
         {
-           if(txtDNICliente.Text != "" && txtNombre.Text != "")
+            if (txtDNICliente.Text != "" && txtNombre.Text != "")
             {
                 _hc.traigoFacturasHistoricoByDniCliente(dgvHistorico);
-            } else
+            }
+            else
             {
                 MessageBox.Show("DEBE CARGAR UN CLIENTE PARA VER SU HISTORICO");
             }
@@ -110,10 +104,11 @@ namespace DesignSistemVentas.View.HistoricoClientesFacturas
 
         private void btnExportarExcel_Click(object sender, EventArgs e)
         {
-            if(dgvHistorico.Rows.Count > 0)
+            if (dgvHistorico.Rows.Count > 0)
             {
                 _hc.ExportarAExcel(dgvHistorico);
-            } else
+            }
+            else
             {
                 MessageBox.Show("No hay registros para exportar!");
             }

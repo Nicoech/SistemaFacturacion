@@ -3,10 +3,6 @@ using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.ProductosViews;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.CategoriaProductosController
@@ -41,7 +37,8 @@ namespace DesignSistemVentas.Controller.CategoriaProductosController
                     VaciarDatos();
                 }
                 Form.ActiveForm.Close();
-            } else
+            }
+            else
             {
                 MessageBox.Show("AGREGE UNA DESCRIPCION A LA CATEGORIA");
             }

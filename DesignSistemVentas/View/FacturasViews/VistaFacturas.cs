@@ -113,7 +113,7 @@ namespace DesignSistemVentas.View.FacturasViews
                 _pf_ctr.eliminoProducto();
                 txtNroRemito.Text = "";
             }
-            
+
         }
         private void btnConfirmarFacturaRegis_Click(object sender, EventArgs e)
         {
@@ -222,7 +222,7 @@ namespace DesignSistemVentas.View.FacturasViews
 
         private void txtDNICliente_Leave(object sender, EventArgs e)
         {
-            if(txtDNICliente.Text != "")
+            if (txtDNICliente.Text != "")
             {
                 _vef_ctr.chequeoDNIFacEvent(txtDNICliente.Text);
             }

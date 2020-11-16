@@ -33,44 +33,46 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cajaView));
-            this.dgvCtaCte = new System.Windows.Forms.DataGridView();
+            this.dgvCaja = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpInicial = new System.Windows.Forms.DateTimePicker();
             this.dtpLimite = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnListar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEliminarMovimiento = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnModificarMovimiento = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAgregarMovimiento = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.iconoClientes = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnListar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.botonMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.botonSalir = new Bunifu.Framework.UI.BunifuImageButton();
-            this.iconoClientes = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCtaCte)).BeginInit();
+            this.txtTotalCaja = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCaja)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconoClientes)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botonMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botonSalir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconoClientes)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvCtaCte
+            // dgvCaja
             // 
-            this.dgvCtaCte.AllowUserToAddRows = false;
-            this.dgvCtaCte.AllowUserToDeleteRows = false;
-            this.dgvCtaCte.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvCtaCte.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvCaja.AllowUserToAddRows = false;
+            this.dgvCaja.AllowUserToDeleteRows = false;
+            this.dgvCaja.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvCaja.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,8 +80,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCtaCte.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCtaCte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCaja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCaja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,11 +89,11 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCtaCte.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCtaCte.Location = new System.Drawing.Point(17, 168);
-            this.dgvCtaCte.Name = "dgvCtaCte";
-            this.dgvCtaCte.ReadOnly = true;
-            this.dgvCtaCte.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.dgvCaja.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCaja.Location = new System.Drawing.Point(17, 168);
+            this.dgvCaja.Name = "dgvCaja";
+            this.dgvCaja.ReadOnly = true;
+            this.dgvCaja.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,14 +101,15 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCtaCte.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCtaCte.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvCaja.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCaja.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvCtaCte.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvCtaCte.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCtaCte.Size = new System.Drawing.Size(858, 324);
-            this.dgvCtaCte.TabIndex = 134;
-            this.dgvCtaCte.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCtaCte_CellMouseDoubleClick);
+            this.dgvCaja.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvCaja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCaja.Size = new System.Drawing.Size(858, 324);
+            this.dgvCaja.TabIndex = 134;
+            this.dgvCaja.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCtaCte_CellMouseDoubleClick);
+            this.dgvCaja.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvCaja_RowsAdded);
             // 
             // label1
             // 
@@ -174,120 +177,9 @@
             this.panel1.Size = new System.Drawing.Size(281, 56);
             this.panel1.TabIndex = 150;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Ivory;
-            this.panel2.Controls.Add(this.iconoClientes);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(12, 19);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(182, 56);
-            this.panel2.TabIndex = 152;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Honeydew;
-            this.panel3.Controls.Add(this.cmbTipo);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.dtpInicial);
-            this.panel3.Controls.Add(this.dtpLimite);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(17, 102);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(858, 60);
-            this.panel3.TabIndex = 155;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Honeydew;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(486, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 24);
-            this.label2.TabIndex = 158;
-            this.label2.Text = "Filtrar por";
-            // 
-            // btnListar
-            // 
-            this.btnListar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnListar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnListar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnListar.BorderRadius = 7;
-            this.btnListar.ButtonText = "LISTAR MOVIMIENTOS";
-            this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnListar.DisabledColor = System.Drawing.Color.Gray;
-            this.btnListar.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnListar.Iconcolor = System.Drawing.Color.Black;
-            this.btnListar.Iconimage = null;
-            this.btnListar.Iconimage_right = null;
-            this.btnListar.Iconimage_right_Selected = null;
-            this.btnListar.Iconimage_Selected = null;
-            this.btnListar.IconMarginLeft = 0;
-            this.btnListar.IconMarginRight = 0;
-            this.btnListar.IconRightVisible = true;
-            this.btnListar.IconRightZoom = 0D;
-            this.btnListar.IconVisible = true;
-            this.btnListar.IconZoom = 90D;
-            this.btnListar.IsTab = false;
-            this.btnListar.Location = new System.Drawing.Point(611, 498);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Normalcolor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnListar.OnHovercolor = System.Drawing.Color.MediumSpringGreen;
-            this.btnListar.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnListar.selected = false;
-            this.btnListar.Size = new System.Drawing.Size(264, 57);
-            this.btnListar.TabIndex = 102;
-            this.btnListar.Text = "LISTAR MOVIMIENTOS";
-            this.btnListar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnListar.Textcolor = System.Drawing.Color.Black;
-            this.btnListar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(597, 19);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(225, 26);
-            this.cmbTipo.TabIndex = 159;
-            this.cmbTipo.SelectedValueChanged += new System.EventHandler(this.cmbTipo_SelectedValueChanged);
-            this.cmbTipo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cmbTipo_MouseClick);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(802, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(37, 35);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 162;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(839, 12);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(33, 35);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 161;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
             // bunifuFlatButton1
             // 
+            this.bunifuFlatButton1.Active = false;
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -323,6 +215,7 @@
             // 
             // btnEliminarMovimiento
             // 
+            this.btnEliminarMovimiento.Active = false;
             this.btnEliminarMovimiento.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnEliminarMovimiento.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnEliminarMovimiento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -359,6 +252,7 @@
             // 
             // btnModificarMovimiento
             // 
+            this.btnModificarMovimiento.Active = false;
             this.btnModificarMovimiento.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnModificarMovimiento.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnModificarMovimiento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -395,6 +289,7 @@
             // 
             // btnAgregarMovimiento
             // 
+            this.btnAgregarMovimiento.Active = false;
             this.btnAgregarMovimiento.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAgregarMovimiento.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAgregarMovimiento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -428,6 +323,131 @@
             this.btnAgregarMovimiento.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarMovimiento.Click += new System.EventHandler(this.btnAgregarMovimiento_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Ivory;
+            this.panel2.Controls.Add(this.iconoClientes);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(12, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(182, 56);
+            this.panel2.TabIndex = 152;
+            // 
+            // iconoClientes
+            // 
+            this.iconoClientes.BackColor = System.Drawing.Color.Transparent;
+            this.iconoClientes.Image = ((System.Drawing.Image)(resources.GetObject("iconoClientes.Image")));
+            this.iconoClientes.InitialImage = ((System.Drawing.Image)(resources.GetObject("iconoClientes.InitialImage")));
+            this.iconoClientes.Location = new System.Drawing.Point(96, 6);
+            this.iconoClientes.Name = "iconoClientes";
+            this.iconoClientes.Size = new System.Drawing.Size(63, 46);
+            this.iconoClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconoClientes.TabIndex = 151;
+            this.iconoClientes.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Honeydew;
+            this.panel3.Controls.Add(this.cmbTipo);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.dtpInicial);
+            this.panel3.Controls.Add(this.dtpLimite);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Location = new System.Drawing.Point(17, 102);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(858, 60);
+            this.panel3.TabIndex = 155;
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(597, 19);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(225, 26);
+            this.cmbTipo.TabIndex = 159;
+            this.cmbTipo.SelectedValueChanged += new System.EventHandler(this.cmbTipo_SelectedValueChanged);
+            this.cmbTipo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cmbTipo_MouseClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Honeydew;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(486, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 24);
+            this.label2.TabIndex = 158;
+            this.label2.Text = "Filtrar por";
+            // 
+            // btnListar
+            // 
+            this.btnListar.Active = false;
+            this.btnListar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnListar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnListar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnListar.BorderRadius = 7;
+            this.btnListar.ButtonText = "LISTAR MOVIMIENTOS";
+            this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnListar.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnListar.Iconcolor = System.Drawing.Color.Black;
+            this.btnListar.Iconimage = null;
+            this.btnListar.Iconimage_right = null;
+            this.btnListar.Iconimage_right_Selected = null;
+            this.btnListar.Iconimage_Selected = null;
+            this.btnListar.IconMarginLeft = 0;
+            this.btnListar.IconMarginRight = 0;
+            this.btnListar.IconRightVisible = true;
+            this.btnListar.IconRightZoom = 0D;
+            this.btnListar.IconVisible = true;
+            this.btnListar.IconZoom = 90D;
+            this.btnListar.IsTab = false;
+            this.btnListar.Location = new System.Drawing.Point(17, 498);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Normalcolor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnListar.OnHovercolor = System.Drawing.Color.MediumSpringGreen;
+            this.btnListar.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnListar.selected = false;
+            this.btnListar.Size = new System.Drawing.Size(264, 57);
+            this.btnListar.TabIndex = 102;
+            this.btnListar.Text = "LISTAR MOVIMIENTOS";
+            this.btnListar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnListar.Textcolor = System.Drawing.Color.Black;
+            this.btnListar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(802, 12);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(37, 35);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 162;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(839, 12);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(33, 35);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 161;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
             // botonMinimizar
             // 
             this.botonMinimizar.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -456,31 +476,41 @@
             this.botonSalir.Zoom = 10;
             this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
-            // iconoClientes
+            // txtTotalCaja
             // 
-            this.iconoClientes.BackColor = System.Drawing.Color.Transparent;
-            this.iconoClientes.Image = ((System.Drawing.Image)(resources.GetObject("iconoClientes.Image")));
-            this.iconoClientes.InitialImage = ((System.Drawing.Image)(resources.GetObject("iconoClientes.InitialImage")));
-            this.iconoClientes.Location = new System.Drawing.Point(96, 6);
-            this.iconoClientes.Name = "iconoClientes";
-            this.iconoClientes.Size = new System.Drawing.Size(63, 46);
-            this.iconoClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconoClientes.TabIndex = 151;
-            this.iconoClientes.TabStop = false;
+            this.txtTotalCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalCaja.Location = new System.Drawing.Point(675, 511);
+            this.txtTotalCaja.Name = "txtTotalCaja";
+            this.txtTotalCaja.Size = new System.Drawing.Size(201, 26);
+            this.txtTotalCaja.TabIndex = 163;
+            this.txtTotalCaja.Text = "$";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.LightYellow;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(563, 515);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 18);
+            this.label4.TabIndex = 164;
+            this.label4.Text = "TOTAL CAJA";
             // 
             // cajaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(886, 567);
+            this.ClientSize = new System.Drawing.Size(888, 566);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtTotalCaja);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.botonMinimizar);
             this.Controls.Add(this.botonSalir);
-            this.Controls.Add(this.dgvCtaCte);
+            this.Controls.Add(this.dgvCaja);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -488,24 +518,25 @@
             this.Text = "cajaView";
             this.Load += new System.EventHandler(this.cajaView_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cajaView_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCtaCte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCaja)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconoClientes)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botonMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botonSalir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconoClientes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        public System.Windows.Forms.DataGridView dgvCtaCte;
+        public System.Windows.Forms.DataGridView dgvCaja;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
@@ -526,5 +557,7 @@
         public System.Windows.Forms.DateTimePicker dtpInicial;
         public System.Windows.Forms.DateTimePicker dtpLimite;
         public System.Windows.Forms.ComboBox cmbTipo;
+        public System.Windows.Forms.TextBox txtTotalCaja;
+        private System.Windows.Forms.Label label4;
     }
 }

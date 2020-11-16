@@ -1,14 +1,8 @@
 ﻿using DesignSistemVentas.Controller.CajaController;
 using DesignSistemVentas.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.View.CajaView
@@ -17,7 +11,7 @@ namespace DesignSistemVentas.View.CajaView
     {
         private cajaModificacionMovimientosController _cmmc;
         private cajaModificar _cm;
-        
+
 
 
         // CODIGO PARA MOVER FORM SIN BORDES 

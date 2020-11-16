@@ -61,7 +61,8 @@ namespace DesignSistemVentas.View.FacturasViews
                         if (Convert.ToInt32(txtCantidad.Text) > 0)
 
                         {
-                            if (_pf_ctr.descuentoCantidad() == true) {
+                            if (_pf_ctr.descuentoCantidad() == true)
+                            {
 
                                 _pf_ctr.agregoProductoFactura(_vistaf);
 

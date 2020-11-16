@@ -1,11 +1,7 @@
 ﻿using DesignSistemVentas.ModelDao;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Model.Dao
@@ -221,7 +217,7 @@ namespace DesignSistemVentas.Model.Dao
             }
         }
 
-    
+
         public DataTable searchMovimientosbyFiltro(string a)
         {
             try
@@ -257,7 +253,7 @@ namespace DesignSistemVentas.Model.Dao
             }
             return dt;
         }
-     
+
         public DataTable searchMovimientosbyFecha(DateTimePicker dtp, DateTimePicker dtp2)
         {
             try

@@ -60,7 +60,7 @@
             this.botonMinimizar.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.botonMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("botonMinimizar.Image")));
             this.botonMinimizar.ImageActive = null;
-            this.botonMinimizar.Location = new System.Drawing.Point(742, 5);
+            this.botonMinimizar.Location = new System.Drawing.Point(836, 5);
             this.botonMinimizar.Name = "botonMinimizar";
             this.botonMinimizar.Size = new System.Drawing.Size(36, 35);
             this.botonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -74,7 +74,7 @@
             this.botonSalir.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.botonSalir.Image = ((System.Drawing.Image)(resources.GetObject("botonSalir.Image")));
             this.botonSalir.ImageActive = null;
-            this.botonSalir.Location = new System.Drawing.Point(779, 5);
+            this.botonSalir.Location = new System.Drawing.Point(873, 5);
             this.botonSalir.Name = "botonSalir";
             this.botonSalir.Size = new System.Drawing.Size(31, 35);
             this.botonSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +118,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.dgvProductosFactura.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductosFactura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProductosFactura.Size = new System.Drawing.Size(501, 410);
+            this.dgvProductosFactura.Size = new System.Drawing.Size(608, 410);
             this.dgvProductosFactura.TabIndex = 92;
             this.dgvProductosFactura.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProductosFactura_CellMouseClick);
             // 
@@ -147,7 +147,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(527, 372);
+            this.label3.Location = new System.Drawing.Point(627, 373);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 16);
@@ -158,7 +158,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(527, 158);
+            this.label2.Location = new System.Drawing.Point(627, 159);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 16);
@@ -169,7 +169,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(527, 85);
+            this.label4.Location = new System.Drawing.Point(627, 86);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 16);
@@ -180,7 +180,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(527, 229);
+            this.label5.Location = new System.Drawing.Point(627, 230);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 16);
@@ -191,7 +191,7 @@
             // 
             this.txtCodigo.Enabled = false;
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(530, 116);
+            this.txtCodigo.Location = new System.Drawing.Point(630, 117);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(274, 24);
             this.txtCodigo.TabIndex = 104;
@@ -200,7 +200,7 @@
             // 
             this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(529, 187);
+            this.txtDescripcion.Location = new System.Drawing.Point(629, 188);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(274, 24);
             this.txtDescripcion.TabIndex = 105;
@@ -209,7 +209,7 @@
             // 
             this.txtPrecio.Enabled = false;
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(530, 258);
+            this.txtPrecio.Location = new System.Drawing.Point(630, 259);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(274, 24);
             this.txtPrecio.TabIndex = 106;
@@ -217,7 +217,7 @@
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(528, 401);
+            this.txtCantidad.Location = new System.Drawing.Point(628, 402);
             this.txtCantidad.MaxLength = 5;
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(274, 24);
@@ -249,7 +249,7 @@
             this.btnAgregoProductoFactura.ImageZoom = 50;
             this.btnAgregoProductoFactura.LabelPosition = 39;
             this.btnAgregoProductoFactura.LabelText = "AGREGAR PRODUCTO aaaaa";
-            this.btnAgregoProductoFactura.Location = new System.Drawing.Point(529, 437);
+            this.btnAgregoProductoFactura.Location = new System.Drawing.Point(629, 438);
             this.btnAgregoProductoFactura.Margin = new System.Windows.Forms.Padding(6);
             this.btnAgregoProductoFactura.Name = "btnAgregoProductoFactura";
             this.btnAgregoProductoFactura.Size = new System.Drawing.Size(270, 58);
@@ -260,7 +260,7 @@
             // 
             this.txtStockActual.Enabled = false;
             this.txtStockActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStockActual.Location = new System.Drawing.Point(529, 332);
+            this.txtStockActual.Location = new System.Drawing.Point(629, 333);
             this.txtStockActual.Name = "txtStockActual";
             this.txtStockActual.Size = new System.Drawing.Size(273, 24);
             this.txtStockActual.TabIndex = 111;
@@ -269,7 +269,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(527, 300);
+            this.label7.Location = new System.Drawing.Point(627, 301);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(247, 16);
@@ -280,7 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 507);
+            this.ClientSize = new System.Drawing.Size(914, 507);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtStockActual);
             this.Controls.Add(this.btnAgregoProductoFactura);

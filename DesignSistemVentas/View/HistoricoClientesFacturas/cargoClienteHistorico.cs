@@ -1,14 +1,8 @@
 ﻿using DesignSistemVentas.Controller.HistoricoController;
 using DesignSistemVentas.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.View.HistoricoClientesFacturas
@@ -17,14 +11,14 @@ namespace DesignSistemVentas.View.HistoricoClientesFacturas
     {
         private cargoClientesHistoricoController _cchc;
         private HistoricoClientesView _hcv;
-        
+
         public cargoClienteHistorico(HistoricoClientesView hcv)
         {
             InitializeComponent();
             _cchc = new cargoClientesHistoricoController(this);
             _hcv = hcv;
         }
-        
+
 
         // CODIGO PARA MOVER FORM SIN BORDES 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

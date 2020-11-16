@@ -124,6 +124,7 @@
             // 
             // btnAltaUsuario
             // 
+            this.btnAltaUsuario.Active = false;
             this.btnAltaUsuario.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAltaUsuario.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnAltaUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -163,7 +164,7 @@
             this.botonSalir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.botonSalir.Image = ((System.Drawing.Image)(resources.GetObject("botonSalir.Image")));
             this.botonSalir.ImageActive = null;
-            this.botonSalir.Location = new System.Drawing.Point(312, 6);
+            this.botonSalir.Location = new System.Drawing.Point(319, 5);
             this.botonSalir.Name = "botonSalir";
             this.botonSalir.Size = new System.Drawing.Size(29, 30);
             this.botonSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -178,7 +179,7 @@
             this.botonMinimizar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.botonMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("botonMinimizar.Image")));
             this.botonMinimizar.ImageActive = null;
-            this.botonMinimizar.Location = new System.Drawing.Point(279, 6);
+            this.botonMinimizar.Location = new System.Drawing.Point(286, 5);
             this.botonMinimizar.Name = "botonMinimizar";
             this.botonMinimizar.Size = new System.Drawing.Size(34, 30);
             this.botonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

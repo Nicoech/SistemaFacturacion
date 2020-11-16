@@ -2,7 +2,6 @@
 using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.ProductosViews;
-using EO.Internal;
 using System;
 using System.Windows.Forms;
 
@@ -40,7 +39,7 @@ namespace DesignSistemVentas.Controller.ProductosController
             prod_model.Stock_Act = Convert.ToInt32(_mp.txtCantidadAct.Text);
             prod_model.Stock_Min = Convert.ToInt32(_mp.txtCantidadMin.Text);
             prod_model.Cod_Producto = _mp.txtCodProd.Text;
-            if(_mp.cmbCategoria.Text != "")
+            if (_mp.cmbCategoria.Text != "")
             {
                 prod_model.Categoria = Convert.ToInt32(obtengoIDCategoriaString(_mp.cmbCategoria.Text));
             }

@@ -4,10 +4,6 @@ using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.CajaView;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.CajaController
@@ -44,7 +40,7 @@ namespace DesignSistemVentas.Controller.CajaController
 
         public void searchMovimientosCaja(cajaView _cv)
         {
-            if(cDao.searchCaja(_cv.dgvCtaCte) == false)
+            if (cDao.searchCaja(_cv.dgvCaja) == false)
             {
                 MessageBox.Show("NO SE ENCONTRARON MOVIMIENTOS DE CAJA!");
             }
@@ -98,7 +94,7 @@ namespace DesignSistemVentas.Controller.CajaController
             _ca.txtDescripcion.Clear();
             _ca.txtDetalle.Clear();
             _ca.txtMonto.Clear();
-            
+
         }
 
         public void NumerosConComa(object sender, KeyPressEventArgs e)

@@ -5,9 +5,7 @@ using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.CuentasCorrientesView;
-using DesignSistemVentas.View.FacturasViews;
 using System;
-using System.ComponentModel.Design;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -43,18 +41,20 @@ namespace DesignSistemVentas.Controller
         }
         public bool traigoCliente()
         {
-            if (_ccDao.searchClientesCtaCte(_cargoC.dgvClientesCtaCte) == true) {
+            if (_ccDao.searchClientesCtaCte(_cargoC.dgvClientesCtaCte) == true)
+            {
                 return true;
-            } else
+            }
+            else
             {
                 MessageBox.Show("NO SE ENCONTRARON CLIENTES QUE ADEUDEN FACTURAS!");
                 Form.ActiveForm.Close();
                 return false;
             }
-            
+
         }
 
-        public void generoReciboCTACTE(int NroFac, string saldoAnt,string saldoAct,string nroCuota)
+        public void generoReciboCTACTE(int NroFac, string saldoAnt, string saldoAct, string nroCuota)
         {
 
             _ccacv.txtNroFac.Text = NroFac.ToString();

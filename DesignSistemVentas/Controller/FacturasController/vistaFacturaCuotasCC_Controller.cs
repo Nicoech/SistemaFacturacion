@@ -141,6 +141,7 @@ namespace DesignSistemVentas.Controller.FacturasController
 
 
                             DateTime fechaInicial = Convert.ToDateTime(_vf.dgvFacturaCuotas.Rows[num_fila - 1].Cells[3].Value).AddMonths(1);
+
                             DateTime fechaVto = Convert.ToDateTime(_vf.dgvFacturaCuotas.Rows[num_fila - 1].Cells[4].Value).AddMonths(1);
 
 
@@ -261,7 +262,7 @@ namespace DesignSistemVentas.Controller.FacturasController
 
 
 
-      
+
         public void pagoCC_CalculoCuotas_Observaciones(VistaFacturas _vf)
         {
 
@@ -280,7 +281,7 @@ namespace DesignSistemVentas.Controller.FacturasController
                             + " Importe Total: $ " + _vf.txtTotal.Text + "." + "\n" +
                             " Saldo(descontando anticipacion): $ " + _vf.txtSaldoAnticipo.Text
                             + " en cuotas mensuales de $ " + _vf.txtAnticipo.Text + " c/u" + "\n" +
-                            " que se abonaran a partir del dia "+ _vfcc.dtpFechaInicial.Value.Day.ToString() + " hasta el día " + _vfcc.dtpFechaVto.Value.Day + " de " + _vfcc.dtpFechaVto.Value.Year + " de cada mes";
+                            " que se abonaran a partir del dia " + _vfcc.dtpFechaInicial.Value.Day.ToString() + " hasta el día " + _vfcc.dtpFechaVto.Value.Day + " de " + _vfcc.dtpFechaVto.Value.Year + " de cada mes";
 
 
 

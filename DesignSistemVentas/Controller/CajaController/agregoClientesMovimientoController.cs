@@ -1,11 +1,5 @@
 ﻿using DesignSistemVentas.Model.Dao;
-using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View.CajaView;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignSistemVentas.Controller.CajaController
 {
@@ -19,7 +13,7 @@ namespace DesignSistemVentas.Controller.CajaController
         {
             _acm = acm;
         }
-        
+
         public agregoClientesMovimientoController(cajaAgregar ca)
         {
             _ca = ca;
@@ -32,8 +26,8 @@ namespace DesignSistemVentas.Controller.CajaController
 
         public void bindData(cajaAgregar _ca)
         {
-            _ca.txtDescripcion.Text = _acm.dgvClientesCaja.CurrentRow.Cells[1].Value.ToString() +" "+ _acm.dgvClientesCaja.CurrentRow.Cells[2].Value.ToString() + " "+ _acm.dgvClientesCaja.CurrentRow.Cells[3].Value.ToString();
-            _acm.Close(); 
+            _ca.txtDescripcion.Text = _acm.dgvClientesCaja.CurrentRow.Cells[1].Value.ToString() + " " + _acm.dgvClientesCaja.CurrentRow.Cells[2].Value.ToString() + " " + _acm.dgvClientesCaja.CurrentRow.Cells[3].Value.ToString();
+            _acm.Close();
         }
     }
 }

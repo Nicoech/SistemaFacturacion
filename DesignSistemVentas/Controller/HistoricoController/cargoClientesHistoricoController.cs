@@ -1,10 +1,5 @@
 ﻿using DesignSistemVentas.Model.Dao;
 using DesignSistemVentas.View.HistoricoClientesFacturas;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignSistemVentas.Controller.HistoricoController
 {
@@ -32,8 +27,8 @@ namespace DesignSistemVentas.Controller.HistoricoController
         public void bindDataCliente(HistoricoClientesView _hcv)
         {
             _hcv.txtDNICliente.Text = _cch.dgvClientesHistorico.CurrentRow.Cells[0].Value.ToString();
-            _hcv.txtNombre.Text = _cch.dgvClientesHistorico.CurrentRow.Cells[1].Value.ToString() +" "+  _cch.dgvClientesHistorico.CurrentRow.Cells[2].Value.ToString();
-             
+            _hcv.txtNombre.Text = _cch.dgvClientesHistorico.CurrentRow.Cells[1].Value.ToString() + " " + _cch.dgvClientesHistorico.CurrentRow.Cells[2].Value.ToString();
+
         }
     }
 }

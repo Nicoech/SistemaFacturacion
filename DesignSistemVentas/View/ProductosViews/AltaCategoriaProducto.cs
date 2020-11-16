@@ -1,19 +1,12 @@
 ﻿using DesignSistemVentas.Controller.CategoriaProductosController;
 using DesignSistemVentas.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.View.ProductosViews
 {
-   
+
     public partial class AltaCategoriaProducto : Form
     {
         private categoriaProductosController _cpc;
@@ -59,12 +52,12 @@ namespace DesignSistemVentas.View.ProductosViews
         }
         private void botonSalir_Click_1(object sender, EventArgs e)
         {
-                ActiveForm.Close();
+            ActiveForm.Close();
         }
 
         private void botonMinimizar_Click(object sender, EventArgs e)
         {
-                WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Minimized;
         }
 
         private void AltaCategoriaProducto_MouseDown(object sender, MouseEventArgs e)

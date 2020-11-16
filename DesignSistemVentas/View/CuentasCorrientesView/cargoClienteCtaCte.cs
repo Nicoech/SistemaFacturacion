@@ -57,8 +57,9 @@ namespace DesignSistemVentas.View.CuentasCorrientesView
             bordesRedondeadosForm();
 
 
-            if (_ccc_ctr.traigoCliente() == false) {
-                this.Close(); 
+            if (_ccc_ctr.traigoCliente() == false)
+            {
+                this.Close();
             }
 
         }

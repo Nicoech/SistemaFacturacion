@@ -35,7 +35,7 @@ namespace DesignSistemVentas.Controller.FacturasController
             fac_Dao.searchProductosFactura(_cpf.dgvProductosFactura);
         }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
 
         public void bindDataProducto()
         {
@@ -52,8 +52,8 @@ namespace DesignSistemVentas.Controller.FacturasController
             var P = new Productos();
 
 
-                P.ID_Producto = Convert.ToInt32(_cpf.txtCodigo.Text);
-                P.Stock_Act = Convert.ToInt32(_cpf.txtCantidad.Text);
+            P.ID_Producto = Convert.ToInt32(_cpf.txtCodigo.Text);
+            P.Stock_Act = Convert.ToInt32(_cpf.txtCantidad.Text);
 
             var result = System.Windows.Forms.MessageBox.Show("ESTA SEGURO DE AGREGAR LA CANTIDAD SELECCIONADA?, ESTA CANTIDAD SE ELIMINARA DEL STOCK ACTUAL DE PRODUCTO", "INGRESAR PRODUCTO FACTURA", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
@@ -82,7 +82,8 @@ namespace DesignSistemVentas.Controller.FacturasController
             {
                 fac_Dao.adicionCantidad(P);
                 return true;
-            } else
+            }
+            else
             {
                 return false;
             }
@@ -179,7 +180,7 @@ namespace DesignSistemVentas.Controller.FacturasController
 
                         neto = Convert.ToDecimal(dgv.Cells[4].Value);
 
-                
+
 
                         _vf.txtNeto.Text = neto.ToString("N");
 

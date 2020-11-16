@@ -79,7 +79,7 @@ namespace DesignSistemVentas.View.CuentasCorrientesView
                     row.DefaultCellStyle.ForeColor = Color.White;
 
                 }
-                else if(row.Cells[4].Value.ToString() == "Pendiente")
+                else if (row.Cells[4].Value.ToString() == "Pendiente")
                 {
                     row.DefaultCellStyle.BackColor = Color.Red;
                     row.DefaultCellStyle.SelectionBackColor = Color.Red;

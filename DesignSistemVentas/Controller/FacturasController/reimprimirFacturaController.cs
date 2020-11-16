@@ -1,17 +1,12 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using DesignSistemVentas.Model.Dao;
-using DesignSistemVentas.ModelDao;
 using DesignSistemVentas.View.FacturasViews;
 using DesignSistemVentas.View.FacturasViews.ReimprimirFactura;
 using DesignSistemVentas.View.RemitosViews;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.FacturasController
@@ -40,7 +35,7 @@ namespace DesignSistemVentas.Controller.FacturasController
             _ccrf = ccrf;
         }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void cerrarVentana()
         {
             if (MessageBox.Show("¿DESEA CERRAR ESTA VENTANA?", "CERRAR ESTA VENTANA?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
@@ -48,14 +43,15 @@ namespace DesignSistemVentas.Controller.FacturasController
                 Form.ActiveForm.Close();
             }
         }
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void BindData(vistaReimprimoFacturas _vrf, cargoClienteReimprimirFac _ccrf)
         {
             if (_ccrf.txtBusquedaClientes.Text == "")
             {
                 _vrf.txtID_Cliente.Text = _ccrf.dgvClientesFactura.CurrentRow.Cells[0].Value.ToString();
                 _vrf.txtNombreCliente.Text = _ccrf.dgvClientesFactura.CurrentRow.Cells[2].Value.ToString() + " " + _ccrf.dgvClientesFactura.CurrentRow.Cells[3].Value.ToString();
-            } else
+            }
+            else
             {
                 _vrf.txtID_Cliente.Text = _ccrf.dgvClientesFactura.CurrentRow.Cells[0].Value.ToString();
                 _vrf.txtNombreCliente.Text = _ccrf.dgvClientesFactura.CurrentRow.Cells[1].Value.ToString() + " " + _ccrf.dgvClientesFactura.CurrentRow.Cells[2].Value.ToString();
@@ -66,11 +62,11 @@ namespace DesignSistemVentas.Controller.FacturasController
                 traigoFacturas(_vrf);
                 traigoRemitoFactura(_vrf);
             }
-     
+
             _ccrf.Close();
         }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void traigoFacturas(vistaReimprimoFacturas _vrf)
         {
             if (_vrf.txtID_Cliente.Text != "")
@@ -80,7 +76,7 @@ namespace DesignSistemVentas.Controller.FacturasController
             }
 
         }
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void traigoRemitoFactura(vistaReimprimoFacturas _vrf)
         {
             if (_vrf.txtID_Cliente.Text != "")
@@ -89,7 +85,7 @@ namespace DesignSistemVentas.Controller.FacturasController
                 _vrf.cmbRemito.DataSource = fac_Dao.SP_searchRemitosByIDCliente(_vrf.txtID_Cliente.Text);
             }
         }
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void generoFactura(int NroFac)
         {
 
@@ -150,8 +146,8 @@ namespace DesignSistemVentas.Controller.FacturasController
         //--------------------------------------------------------------------------------------------------------------------------------------------------
         public void searchByfiltro()
         {
-            fac_Dao.SearchClientsByFiltroReimprimirFacturas(_ccrf.dgvClientesFactura,_ccrf.txtBusquedaClientes.Text);
+            fac_Dao.SearchClientsByFiltroReimprimirFacturas(_ccrf.dgvClientesFactura, _ccrf.txtBusquedaClientes.Text);
         }
     }
-//--------------------------------------------------------------------------------------------------------------------------------------------------
+    //--------------------------------------------------------------------------------------------------------------------------------------------------
 }

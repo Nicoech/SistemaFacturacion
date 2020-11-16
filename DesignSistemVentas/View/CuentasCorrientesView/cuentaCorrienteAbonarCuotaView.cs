@@ -76,7 +76,7 @@ namespace DesignSistemVentas.View.CuentasCorrientesView
             {
                 _ccc_ctr.pintoFilaCuotAbonada(_ccv);
                 _ccc_ctr.UpdateEstadoCuotas(_ccv);
-                _ccc_ctr.generoReciboCTACTE(Convert.ToInt32(_ccv.cmbBoxNroFac.Text), txtSaldoAct.Text,txtSaldoFinal.Text, txtNroCuota.Text);
+                _ccc_ctr.generoReciboCTACTE(Convert.ToInt32(_ccv.cmbBoxNroFac.Text), txtSaldoAct.Text, txtSaldoFinal.Text, txtNroCuota.Text);
             }
         }
 

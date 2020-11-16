@@ -28,7 +28,7 @@ namespace DesignSistemVentas.View.ProductosViews
             _ap_ctr = new AltaProductosController(this);
 
         }
-///----------------------------------------------------------------------------------------------------------------------------------------------------
+        ///----------------------------------------------------------------------------------------------------------------------------------------------------
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -39,7 +39,7 @@ namespace DesignSistemVentas.View.ProductosViews
           int nWidthEllipse, // height of ellipse
           int nHeightEllipse // width of ellipse
         );
-///----------------------------------------------------------------------------------------------------------------------------------------------------
+        ///----------------------------------------------------------------------------------------------------------------------------------------------------
 
         //BOTONES PARA SALIR Y MINIMIZAR DEL FORM
         private void botonSalir_Click(object sender, EventArgs e)
@@ -78,15 +78,22 @@ namespace DesignSistemVentas.View.ProductosViews
         private void btnAltaProducto_Click(object sender, EventArgs e)
         {
             if ((txtID_Prod.Text != "") & (txtDescripcion.Text != "") & (txtStockMin.Text != "") & (txtStockAct.Text != "") & (txtPrecio.Text != "") &
-            (txtDescripcion.Text != ""))
+            (txtDescripcion.Text != "")) 
 
             {
                 var result = System.Windows.Forms.MessageBox.Show("DESEA DAR DEL ALTA NUEVO PRODUCTO?", "ALTA PRODUCTO", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
                 if (result == DialogResult.OK)
                 {
-                    _ap_ctr.AltaProducto();
-                    _ap_ctr.searchProductsIntoDb(_vp);
+                    if (cmbCategoria.Text != "")
+                    {
+                        _ap_ctr.AltaProducto();
+                        _ap_ctr.searchProductsIntoDb(_vp);
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("SELECCIONE UNA CATEGORIA PARA SU PRODUCTO", "MSJ DE ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
 
             }
@@ -133,6 +140,16 @@ namespace DesignSistemVentas.View.ProductosViews
         {
             AltaCategoriaProducto acp = new AltaCategoriaProducto();
             acp.ShowDialog();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Close();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
 
         ///----------------------------------------------------------------------------------------------------------------------------------------------------

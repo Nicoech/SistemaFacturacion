@@ -3,10 +3,6 @@ using DesignSistemVentas.ModelDao;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.UsuariosView;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignSistemVentas.Controller.UserController
@@ -40,13 +36,13 @@ namespace DesignSistemVentas.Controller.UserController
 
                     if (result == DialogResult.Yes)
                     {
-                            _user_Dao.DeleteProduct(_user_model);
+                        _user_Dao.DeleteProduct(_user_model);
 
-                            msg.lblMsg.Text = "USUARIO ELIMINADO CON EXITO!";
+                        msg.lblMsg.Text = "USUARIO ELIMINADO CON EXITO!";
 
-                            msg.ShowDialog();
+                        msg.ShowDialog();
 
-                            _user_Dao.SearchUsers(_uv.dgvUsuarios);
+                        _user_Dao.SearchUsers(_uv.dgvUsuarios);
                     }
 
                 }

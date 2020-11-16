@@ -1,6 +1,5 @@
 ﻿using DesignSistemVentas.Controller;
 using DesignSistemVentas.Utilities;
-using DesignSistemVentas.View.FacturasViews;
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -156,7 +155,7 @@ namespace DesignSistemVentas.View
 
         private void txtNroDocumento_MouseLeave(object sender, EventArgs e)
         {
-            if(txtNroDocumento.Text != "")
+            if (txtNroDocumento.Text != "")
             {
                 _ac_ctr.verificoDNI();
             }

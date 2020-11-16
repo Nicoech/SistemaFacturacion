@@ -82,7 +82,7 @@ namespace DesignSistemVentas.View
         //ANIMACION CUANDO SE ABRE FORM
         private void VistaClientes_Load(object sender, EventArgs e)
         {
-            WinAPI.AnimateWindow(this.Handle, 500, WinAPI.VER_POSITIVE);
+            WinAPI.AnimateWindow(this.Handle, 360, WinAPI.VER_POSITIVE);
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 30, 30));
         }

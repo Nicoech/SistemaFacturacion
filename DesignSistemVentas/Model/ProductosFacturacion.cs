@@ -43,7 +43,7 @@ namespace DesignSistemVentas.Model
 
         public decimal netoIVA { get; set; }
 
-        public string Observaciones {get;set;}
+        public string Observaciones { get; set; }
 
 
     }

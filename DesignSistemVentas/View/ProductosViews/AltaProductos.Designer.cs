@@ -49,14 +49,14 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.nombreUsuario = new System.Windows.Forms.Label();
             this.btnAgregarCategoria = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.botonMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.botonSalir = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.botonMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.botonSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -207,6 +207,7 @@
             // 
             // btnAltaProducto
             // 
+            this.btnAltaProducto.Active = false;
             this.btnAltaProducto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAltaProducto.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.btnAltaProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -306,6 +307,7 @@
             // 
             // btnAgregarCategoria
             // 
+            this.btnAgregarCategoria.Active = false;
             this.btnAgregarCategoria.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAgregarCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -341,36 +343,6 @@
             this.btnAgregarCategoria.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoria.Click += new System.EventHandler(this.btnAgregarCategoria_Click);
             // 
-            // botonMinimizar
-            // 
-            this.botonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.botonMinimizar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.botonMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("botonMinimizar.Image")));
-            this.botonMinimizar.ImageActive = null;
-            this.botonMinimizar.Location = new System.Drawing.Point(344, 9);
-            this.botonMinimizar.Name = "botonMinimizar";
-            this.botonMinimizar.Size = new System.Drawing.Size(34, 30);
-            this.botonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.botonMinimizar.TabIndex = 106;
-            this.botonMinimizar.TabStop = false;
-            this.botonMinimizar.Zoom = 10;
-            this.botonMinimizar.Click += new System.EventHandler(this.botonMinimizar_Click);
-            // 
-            // botonSalir
-            // 
-            this.botonSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.botonSalir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.botonSalir.Image = ((System.Drawing.Image)(resources.GetObject("botonSalir.Image")));
-            this.botonSalir.ImageActive = null;
-            this.botonSalir.Location = new System.Drawing.Point(377, 9);
-            this.botonSalir.Name = "botonSalir";
-            this.botonSalir.Size = new System.Drawing.Size(34, 30);
-            this.botonSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.botonSalir.TabIndex = 105;
-            this.botonSalir.TabStop = false;
-            this.botonSalir.Zoom = 10;
-            this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
@@ -383,6 +355,36 @@
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(378, 7);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(29, 30);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 127;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(344, 7);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(34, 30);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 126;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
             // AltaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,9 +392,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(415, 768);
+            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.btnAgregarCategoria);
-            this.Controls.Add(this.botonMinimizar);
-            this.Controls.Add(this.botonSalir);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flowLayoutPanel3);
@@ -406,9 +408,9 @@
             this.panel1.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.botonMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.botonSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,8 +427,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label nombreUsuario;
-        private Bunifu.Framework.UI.BunifuImageButton botonMinimizar;
-        private Bunifu.Framework.UI.BunifuImageButton botonSalir;
         public System.Windows.Forms.TextBox txtStockMin;
         public System.Windows.Forms.TextBox txtStockAct;
         public System.Windows.Forms.TextBox txtPrecio;
@@ -438,5 +438,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnAgregarCategoria;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.ComboBox cmbCategoria;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
     }
 }
