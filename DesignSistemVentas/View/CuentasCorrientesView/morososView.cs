@@ -64,7 +64,7 @@ namespace DesignSistemVentas.View.CuentasCorrientesView
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-                ActiveForm.Close();
+           ActiveForm.Close();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -76,6 +76,11 @@ namespace DesignSistemVentas.View.CuentasCorrientesView
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            _ccc.generoReportMorosos();
         }
     }
 }

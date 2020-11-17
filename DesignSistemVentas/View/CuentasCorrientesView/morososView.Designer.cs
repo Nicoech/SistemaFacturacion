@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(morososView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnImprimirListado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dgvMorosos = new System.Windows.Forms.DataGridView();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.iconoClientes = new System.Windows.Forms.PictureBox();
+            this.btnImprimir = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMorosos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -46,46 +46,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 70);
+            this.label1.Location = new System.Drawing.Point(12, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(388, 20);
             this.label1.TabIndex = 106;
             this.label1.Text = "LISTADO DE MOROSOS FACTURAS CTA.CTE";
-            // 
-            // btnImprimirListado
-            // 
-            this.btnImprimirListado.Active = false;
-            this.btnImprimirListado.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnImprimirListado.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnImprimirListado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnImprimirListado.BorderRadius = 7;
-            this.btnImprimirListado.ButtonText = "";
-            this.btnImprimirListado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImprimirListado.DisabledColor = System.Drawing.Color.Gray;
-            this.btnImprimirListado.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnImprimirListado.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnImprimirListado.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnImprimirListado.Iconimage")));
-            this.btnImprimirListado.Iconimage_right = null;
-            this.btnImprimirListado.Iconimage_right_Selected = null;
-            this.btnImprimirListado.Iconimage_Selected = null;
-            this.btnImprimirListado.IconMarginLeft = 0;
-            this.btnImprimirListado.IconMarginRight = 0;
-            this.btnImprimirListado.IconRightVisible = true;
-            this.btnImprimirListado.IconRightZoom = 0D;
-            this.btnImprimirListado.IconVisible = true;
-            this.btnImprimirListado.IconZoom = 90D;
-            this.btnImprimirListado.IsTab = false;
-            this.btnImprimirListado.Location = new System.Drawing.Point(882, 70);
-            this.btnImprimirListado.Name = "btnImprimirListado";
-            this.btnImprimirListado.Normalcolor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnImprimirListado.OnHovercolor = System.Drawing.Color.MediumSpringGreen;
-            this.btnImprimirListado.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnImprimirListado.selected = false;
-            this.btnImprimirListado.Size = new System.Drawing.Size(55, 51);
-            this.btnImprimirListado.TabIndex = 107;
-            this.btnImprimirListado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImprimirListado.Textcolor = System.Drawing.Color.White;
-            this.btnImprimirListado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // dgvMorosos
             // 
@@ -97,17 +62,17 @@
             this.dgvMorosos.Name = "dgvMorosos";
             this.dgvMorosos.ReadOnly = true;
             this.dgvMorosos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMorosos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMorosos.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMorosos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvMorosos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMorosos.Size = new System.Drawing.Size(921, 388);
+            this.dgvMorosos.Size = new System.Drawing.Size(921, 350);
             this.dgvMorosos.TabIndex = 134;
             this.dgvMorosos.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvMorosos_RowsAdded);
             // 
@@ -144,23 +109,59 @@
             this.iconoClientes.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.iconoClientes.Image = ((System.Drawing.Image)(resources.GetObject("iconoClientes.Image")));
             this.iconoClientes.InitialImage = ((System.Drawing.Image)(resources.GetObject("iconoClientes.InitialImage")));
-            this.iconoClientes.Location = new System.Drawing.Point(406, 56);
+            this.iconoClientes.Location = new System.Drawing.Point(408, 77);
             this.iconoClientes.Name = "iconoClientes";
-            this.iconoClientes.Size = new System.Drawing.Size(65, 51);
+            this.iconoClientes.Size = new System.Drawing.Size(36, 34);
             this.iconoClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconoClientes.TabIndex = 137;
             this.iconoClientes.TabStop = false;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Active = false;
+            this.btnImprimir.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnImprimir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnImprimir.BorderRadius = 7;
+            this.btnImprimir.ButtonText = "";
+            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir.DisabledColor = System.Drawing.Color.Gray;
+            this.btnImprimir.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnImprimir.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnImprimir.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Iconimage")));
+            this.btnImprimir.Iconimage_right = null;
+            this.btnImprimir.Iconimage_right_Selected = null;
+            this.btnImprimir.Iconimage_Selected = null;
+            this.btnImprimir.IconMarginLeft = 0;
+            this.btnImprimir.IconMarginRight = 0;
+            this.btnImprimir.IconRightVisible = true;
+            this.btnImprimir.IconRightZoom = 0D;
+            this.btnImprimir.IconVisible = true;
+            this.btnImprimir.IconZoom = 90D;
+            this.btnImprimir.IsTab = false;
+            this.btnImprimir.Location = new System.Drawing.Point(882, 70);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Normalcolor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnImprimir.OnHovercolor = System.Drawing.Color.MediumSpringGreen;
+            this.btnImprimir.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnImprimir.selected = false;
+            this.btnImprimir.Size = new System.Drawing.Size(55, 51);
+            this.btnImprimir.TabIndex = 138;
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimir.Textcolor = System.Drawing.Color.White;
+            this.btnImprimir.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // morososView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 530);
+            this.ClientSize = new System.Drawing.Size(948, 489);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.iconoClientes);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.dgvMorosos);
-            this.Controls.Add(this.btnImprimirListado);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "morososView";
@@ -178,10 +179,10 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        public Bunifu.Framework.UI.BunifuFlatButton btnImprimirListado;
         public System.Windows.Forms.DataGridView dgvMorosos;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private System.Windows.Forms.PictureBox iconoClientes;
+        public Bunifu.Framework.UI.BunifuFlatButton btnImprimir;
     }
 }

@@ -106,6 +106,7 @@
             // 
             // btnModif
             // 
+            this.btnModif.Active = false;
             this.btnModif.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnModif.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnModif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -141,6 +142,7 @@
             // 
             // btnListarClientes
             // 
+            this.btnListarClientes.Active = false;
             this.btnListarClientes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnListarClientes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -178,6 +180,7 @@
             // 
             // btnModificarClientes
             // 
+            this.btnModificarClientes.Active = false;
             this.btnModificarClientes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnModificarClientes.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnModificarClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -214,6 +217,7 @@
             // 
             // btnAgregarCliente
             // 
+            this.btnAgregarCliente.Active = false;
             this.btnAgregarCliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAgregarCliente.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAgregarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -290,7 +294,10 @@
             // 
             // txtBusquedaClientes
             // 
+            this.txtBusquedaClientes.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBusquedaClientes.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtBusquedaClientes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtBusquedaClientes.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBusquedaClientes.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBusquedaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtBusquedaClientes.ForeColor = System.Drawing.Color.DarkSlateGray;
@@ -303,6 +310,7 @@
             this.txtBusquedaClientes.LineThickness = 3;
             this.txtBusquedaClientes.Location = new System.Drawing.Point(3, -1);
             this.txtBusquedaClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBusquedaClientes.MaxLength = 32767;
             this.txtBusquedaClientes.Name = "txtBusquedaClientes";
             this.txtBusquedaClientes.Size = new System.Drawing.Size(366, 50);
             this.txtBusquedaClientes.TabIndex = 0;
@@ -311,6 +319,7 @@
             // 
             // btnEliminarCliente
             // 
+            this.btnEliminarCliente.Active = false;
             this.btnEliminarCliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnEliminarCliente.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnEliminarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -405,6 +414,7 @@
             // 
             // btnExportarExcel
             // 
+            this.btnExportarExcel.Active = false;
             this.btnExportarExcel.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnExportarExcel.BackColor = System.Drawing.Color.DarkGreen;
             this.btnExportarExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -478,8 +488,9 @@
             // 
             // bunifuFlatButton1
             // 
+            this.bunifuFlatButton1.Active = false;
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.bunifuFlatButton1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bunifuFlatButton1.BorderRadius = 7;
             this.bunifuFlatButton1.ButtonText = "";

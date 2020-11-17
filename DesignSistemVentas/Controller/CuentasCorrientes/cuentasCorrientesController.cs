@@ -6,6 +6,7 @@ using DesignSistemVentas.Utilities;
 using DesignSistemVentas.View;
 using DesignSistemVentas.View.CuentasCorrientesView;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace DesignSistemVentas.Controller
         private cuentaCorrienteAbonarCuotaView _ccacv;
         private cuentasCorrientesView _ccv;
         private morososView _mv;
+        private DataSet ds = new DataSet();
 
         private cargoClienteCtaCte _cargoC;
         private Constants c = new Constants();
@@ -60,6 +62,16 @@ namespace DesignSistemVentas.Controller
 
         }
 
+
+        public void generoReportMorosos()
+        {
+            morososReport c = new morososReport();
+
+            morososReportForm prf = new morososReportForm();
+            c.SetDataSource(ds);
+            prf.crystalReport.ReportSource = c;
+            prf.ShowDialog();
+        }
         public void generoReciboCTACTE(int NroFac, string saldoAnt, string saldoAct, string nroCuota)
         {
 
