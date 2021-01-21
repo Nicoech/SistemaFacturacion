@@ -259,6 +259,12 @@
     <Compile Include="Controller\HistoricoController\historicoController.cs" />
     <Compile Include="Controller\UserController\DeleteUserController.cs" />
     <Compile Include="Controller\UserController\ModificarUsuarioController.cs" />
+    <Compile Include="View\CuentasCorrientesView\morososView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CuentasCorrientesView\morososView.Designer.cs">
+      <DependentUpon>morososView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\HistoricoClientesFacturas\historicoReporteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -530,6 +536,9 @@
     <EmbeddedResource Include="clienteReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>clienteReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CuentasCorrientesView\morososView.resx">
+      <DependentUpon>morososView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\HistoricoClientesFacturas\historicoReporteForm.resx">
       <DependentUpon>historicoReporteForm.cs</DependentUpon>

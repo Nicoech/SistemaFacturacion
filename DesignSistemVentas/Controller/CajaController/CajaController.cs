@@ -17,6 +17,11 @@ namespace DesignSistemVentas.Controller.CajaController
         {
             _cv = cv;
         }
+        public void setViewToSellerUser()
+        {
+            _cv.btnModificarMovimiento.Enabled = false;
+            _cv.btnEliminarMovimiento.Enabled = false;
+        }
         public void generoReportCaja()
         {
             CajaR c = new CajaR();

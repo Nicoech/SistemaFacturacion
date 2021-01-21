@@ -16,6 +16,7 @@ namespace DesignSistemVentas.Controller
     {
         private cuentaCorrienteAbonarCuotaView _ccacv;
         private cuentasCorrientesView _ccv;
+        private morososView _mv;
 
         private cargoClienteCtaCte _cargoC;
         private Constants c = new Constants();
@@ -38,6 +39,11 @@ namespace DesignSistemVentas.Controller
         public cuentasCorrientesController(cargoClienteCtaCte cargoC)
         {
             _cargoC = cargoC;
+        }
+
+        public cuentasCorrientesController(morososView mv)
+        {
+            _mv = mv;
         }
         public bool traigoCliente()
         {
@@ -114,6 +120,11 @@ namespace DesignSistemVentas.Controller
             _ccDao.SearchClientsByIDorDNI(_cargoC.dgvClientesCtaCte, _cargoC.txtBusquedaClientes.Text);
         }
 
+        public void traigoMorosos()
+        {
+            _ccDao.searchClientesMorosos(_mv.dgvMorosos);
+        }
+
         public void bindDataCliente(cuentasCorrientesView _ccv)
         {
             _ccv.txtIDCliente.Text = _cargoC.dgvClientesCtaCte.CurrentRow.Cells[0].Value.ToString();
@@ -129,6 +140,8 @@ namespace DesignSistemVentas.Controller
             }
 
         }
+
+
 
         public void bindDataPagoCuota()
         {

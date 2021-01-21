@@ -114,6 +114,32 @@ namespace DesignSistemVentas.Model.Dao
                 _objConexion.cerrarConexion();
             }
         }
+        public void searchClientesMorosos(DataGridView Grid)
+        {
+            try
+            {
+
+                comand = new SqlCommand("SP_searchCuotasVencidasClientesCC", _objConexion.getConexion());
+                _objConexion.getConexion().Open();
+                comand.CommandType = CommandType.StoredProcedure;
+                comand.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(comand);
+                da.Fill(dt);
+                Grid.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("HAY UN PROBLEMA CON LA BASE DE DATOS" +
+                               "INFORMACION : " + ex.Message);
+            }
+            finally
+            {
+
+                comand.Connection.Close();
+                _objConexion.cerrarConexion();
+            }
+        }
         //----------------------------------------------------------------------------------------------------------------
         public string consultaFilas(string query, DataTable tabla)
         {

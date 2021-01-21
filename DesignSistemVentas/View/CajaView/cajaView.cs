@@ -1,4 +1,5 @@
 ﻿using DesignSistemVentas.Controller.CajaController;
+using DesignSistemVentas.Model;
 using DesignSistemVentas.Utilities;
 using System;
 using System.Drawing;
@@ -39,14 +40,23 @@ namespace DesignSistemVentas.View.CajaView
             );
 
 
-        public cajaView()
+        public cajaView(UserSessionModel user)
         {
             InitializeComponent();
+
+
             _camc = new cajaAltaMovimientoController(this);
 
             _cmmc = new cajaModificacionMovimientosController(_acm);
             _cdmc = new cajaDeleteMovimientoController(this);
             _cc = new CajaController(this);
+
+
+            if (user.categoria_id == 2)
+            {
+                _cc.setViewToSellerUser();
+            }
+
         }
         private void cajaView_Load(object sender, EventArgs e)
         {

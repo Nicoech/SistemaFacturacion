@@ -187,7 +187,7 @@ namespace DesignSistemVentas.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cajaView cv = new cajaView();
+            cajaView cv = new cajaView(_user);
             cv.ShowDialog();
         }
 
@@ -206,6 +206,12 @@ namespace DesignSistemVentas.Properties
         private void VentanaPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            morososView mv = new morososView();
+            mv.ShowDialog();
         }
     }
 }
